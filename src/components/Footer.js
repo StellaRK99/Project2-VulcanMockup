@@ -2,6 +2,7 @@ import React from 'react'
 import {Logo} from '../public/images/logo-white-vulcan.svg'
 import {fbIcon} from '../public/images/icon-white-facebook.png'
 import {inIcon} from '../public/images/icon-white-linkedin.png'
+import {lightBlueWave} from '../public/images/wave-blue-light.png'
 
 
 function Footer() {
@@ -13,6 +14,7 @@ function Footer() {
         <p>+1 712-642-2755</p>
         <p>CONTACT US</p>
         <p>COPYRIGHT 2017.ALL RIGHTS RESERVED</p>
+        <img className="wave-light-blue" src={lightBlueWave}></img>
     </footer>
   )
 }
