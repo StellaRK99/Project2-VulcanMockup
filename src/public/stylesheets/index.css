@@ -2,4 +2,111 @@
   color: pink;
   background-color: darkseagreen;
 }
+
+.aboutBanner {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.aboutBanner .aboutImg {
+  margin: 0%;
+  width: 100%;
+  height: 50vh;
+}
+
+.aboutBanner .aboutImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutBanner h1 {
+  font-size: 45px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.aboutBanner p {
+  font-size: 13px;
+  text-align: center;
+  width: 40%;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+.aboutBanner button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 150px;
+  height: 30px;
+}
+
+@media (max-width: 900px) {
+  .aboutBanner h1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 40px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 60%;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 40px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 60%;
+    left: 18%;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 30px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 50%;
+    left: 18%;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
 /*# sourceMappingURL=index.css.map */
