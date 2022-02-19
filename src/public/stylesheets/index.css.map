@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,WAAW,CAAA;EACP,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,YAAY;CACjC",
+    "sources": [
+        "index.scss",
+        "_MainBanner.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

@@ -1,5 +1,6 @@
 import MainBanner from './components/MainBanner';
 import Navbar from './components/Navbar'
+import './public/stylesheets/index.css'
 
 
 function App() {

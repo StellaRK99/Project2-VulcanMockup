@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 function MainBanner() {
   return (
-    <div>
+    <div className='MainBanner'>
         MainBanner
         <Navbar />
     </div>
