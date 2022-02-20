@@ -128,4 +128,34 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+
+.NewsletterForm {
+  width: 100%;
+  background-color: #bbd3e9;
+}
+
+.NewsletterForm form {
+  margin: auto;
+  padding-top: 20px;
+  font-size: 20px;
+  width: 70%;
+  color: #0b3552;
+  height: 5vh;
+}
+
+.NewsletterForm form input {
+  margin-left: 15px;
+  width: 40%;
+  border: none;
+  height: 22px;
+}
+
+.NewsletterForm form button {
+  width: 100px;
+  margin-left: 10px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  color: white;
+  background-color: #45b0f8;
+}
 /*# sourceMappingURL=index.css.map */
