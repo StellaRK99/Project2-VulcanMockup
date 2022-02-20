@@ -155,7 +155,7 @@
 .aboutBanner .aboutImg {
   margin: 0%;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
 }
 
 .aboutBanner .aboutImg img {
@@ -300,5 +300,39 @@
   border: none;
   color: white;
   background-color: #45b0f8;
+}
+
+@media (max-width: 1250px) {
+  .NewsletterForm form {
+    width: 90%;
+  }
+  .NewsletterForm form input {
+    width: 30%;
+  }
+}
+
+@media (max-width: 850px) {
+  .NewsletterForm {
+    text-align: center;
+  }
+  .NewsletterForm form {
+    height: 8vh;
+  }
+  .NewsletterForm form input {
+    margin-top: 10px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .NewsletterForm form {
+    height: 8vh;
+    font-size: 16px;
+    width: 100%;
+  }
+  .NewsletterForm form input {
+    width: 40%;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

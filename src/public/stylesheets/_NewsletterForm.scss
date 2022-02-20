@@ -24,3 +24,39 @@
     }
 }
 }
+@media(max-width:1250px){
+    .NewsletterForm{
+        form{
+            width:90%;
+            input{
+                width:30%;
+            }
+        }
+    }
+}
+@media(max-width:850px){
+    .NewsletterForm{
+        text-align: center;
+        form{
+            height:8vh;
+            input{
+                margin-top:10px;
+                width:50%;
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .NewsletterForm{
+        form{
+            height:8vh;
+            font-size:16px;
+            width:100%;
+            input{
+                width:40%;
+                margin-top:10px;
+            }
+        }
+    }
+}
