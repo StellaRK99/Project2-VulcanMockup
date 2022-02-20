@@ -1,5 +1,7 @@
 import MainBanner from './components/MainBanner';
 import AboutBanner from './components/AboutBanner'
+import VideoBanner from './components/VideoBanner'
+import NewsletterForm from './components/NewsletterForm'
 import './public/stylesheets/index.css'
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <div className="App">
       <MainBanner />
       <AboutBanner />
+      <VideoBanner />
+      <NewsletterForm />
     </div>
   );
 }

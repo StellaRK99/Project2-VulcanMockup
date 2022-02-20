@@ -145,4 +145,160 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.aboutBanner {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.aboutBanner .aboutImg {
+  margin: 0%;
+  width: 100%;
+  height: 50vh;
+}
+
+.aboutBanner .aboutImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutBanner h1 {
+  font-size: 45px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.aboutBanner p {
+  font-size: 13px;
+  text-align: center;
+  width: 40%;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+.aboutBanner button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 150px;
+  height: 30px;
+}
+
+@media (max-width: 900px) {
+  .aboutBanner h1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 40px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 60%;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 40px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 60%;
+    left: 18%;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 30px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 50%;
+    left: 18%;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
+
+.videoBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  background-color: #45b0f8;
+}
+
+.videoBanner .promo-video {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.NewsletterForm {
+  width: 100%;
+  background-color: #bbd3e9;
+}
+
+.NewsletterForm form {
+  margin: auto;
+  padding-top: 20px;
+  font-size: 20px;
+  width: 70%;
+  color: #0b3552;
+  height: 5vh;
+}
+
+.NewsletterForm form input {
+  margin-left: 15px;
+  width: 40%;
+  border: none;
+  height: 22px;
+}
+
+.NewsletterForm form button {
+  width: 100px;
+  margin-left: 10px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  color: white;
+  background-color: #45b0f8;
+}
 /*# sourceMappingURL=index.css.map */
