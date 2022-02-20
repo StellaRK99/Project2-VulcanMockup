@@ -1,4 +1,54 @@
 .MainBanner{
-    color: pink;
-    background-color: darkseagreen;
+    color: rgb(255, 255, 255);
+    background-color: rgb(211, 163, 32);
+    height: 100vh;
+    text-align: center;
+    .TopNavbar{
+        position: relative;
+        z-index: 10;
+        margin: 0%;
+        display: flex;
+        width: 100%;
+        list-style: none;
+        padding-top: 20px;
+        .Icon{
+            width: 50%;
+            .img{
+                width: 100%;
+            }
+        }
+        li{
+            width: 15%;
+            h4{
+                margin: 0%;
+            }
+        }
+    }
+    h1{
+        position: relative;
+        z-index: 10;
+        padding: 0% 15% 0% 15%;
+        font-size: 90px;
+    }
+    .ButtonContainer{
+        position: relative;
+        z-index: 10;
+        z-index: 5;
+         display: flex;
+         justify-content: space-evenly;
+         .Prosucts{
+             margin-left: auto;
+             margin-right: 20px;
+         }
+         .Services{
+             margin-right: auto;
+             margin-left: 20px;
+         }
+         .btn{
+             padding: 10px 20px 10px 20px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid white;
+            color: white;
+         }
+    }
 }

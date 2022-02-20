@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div>
+    <div className='MainNavBar'>
       <ul>
         <li><a href='/'>About</a></li>
         <li><a href='/'>Products</a></li>

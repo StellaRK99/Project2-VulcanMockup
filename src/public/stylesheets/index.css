@@ -1,5 +1,148 @@
 .MainBanner {
-  color: pink;
-  background-color: darkseagreen;
+  color: white;
+  background-color: #d3a320;
+  height: 100vh;
+  text-align: center;
+}
+
+.MainBanner .TopNavbar {
+  position: relative;
+  z-index: 10;
+  margin: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  padding-top: 20px;
+}
+
+.MainBanner .TopNavbar .Icon {
+  width: 50%;
+}
+
+.MainBanner .TopNavbar .Icon .img {
+  width: 100%;
+}
+
+.MainBanner .TopNavbar li {
+  width: 15%;
+}
+
+.MainBanner .TopNavbar li h4 {
+  margin: 0%;
+}
+
+.MainBanner h1 {
+  position: relative;
+  z-index: 10;
+  padding: 0% 15% 0% 15%;
+  font-size: 90px;
+}
+
+.MainBanner .ButtonContainer {
+  position: relative;
+  z-index: 10;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.MainBanner .ButtonContainer .Prosucts {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.MainBanner .ButtonContainer .Services {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.MainBanner .ButtonContainer .btn {
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  color: white;
+}
+
+.MainNavBar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.MainNavBar ul {
+  margin: 0%;
+  margin-top: 30px;
+  padding: 0%;
+  list-style: none;
+  background-color: rgba(128, 128, 128, 0.479);
+  width: 50%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MainNavBar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-root {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+}
+
+.carousel-root .carousel {
+  height: 100%;
+}
+
+.carousel-root .carousel button {
+  display: none;
+}
+
+.carousel-root .carousel .carousel-status {
+  display: none;
+}
+
+.carousel-root .carousel .thumbs-wrapper {
+  display: none;
+}
+
+.carousel-root .carousel .slider-wrapper {
+  height: 100%;
+}
+
+.carousel-root .carousel .slider-wrapper .slider {
+  height: 100%;
+}
+
+.carousel-root .carousel .slider-wrapper .slider div {
+  height: 100%;
+}
+
+.carousel-root .carousel .slider-wrapper .slider div img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=index.css.map */
