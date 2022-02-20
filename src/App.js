@@ -1,6 +1,7 @@
 import MainBanner from './components/MainBanner';
 import Navbar from './components/Navbar'
 import AboutBanner from './components/AboutBanner'
+import VideoBanner from './components/VideoBanner'
 import './public/stylesheets/index.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <MainBanner />
       <AboutBanner />
+      <VideoBanner />
     </div>
   );
 }

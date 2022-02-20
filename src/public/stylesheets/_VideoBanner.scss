@@ -1,0 +1,11 @@
+.videoBanner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+    background-color: rgb(69, 176, 248);
+    .promo-video{
+        margin-left:40px;
+        margin-right:40px;
+    }
+}
