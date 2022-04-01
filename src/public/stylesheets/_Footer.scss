@@ -20,6 +20,7 @@ footer {
     flex-direction: column;
     img {
       height: 2.5em;
+      margin: 10px;
     }
     .contactNumbers {
       display: flex;
@@ -42,6 +43,21 @@ footer {
     }
     .contactInfo {
       width: 55%;
+    }
+  }
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+    .icon {
+      width: 20%;
+    }
+    .contactInfo {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .copyRight {
+        width: 60%;
+      }
     }
   }
 }

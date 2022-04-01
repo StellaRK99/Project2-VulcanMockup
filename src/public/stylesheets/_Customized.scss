@@ -1,0 +1,60 @@
+@import "./Variables";
+
+.customized {
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    text-align: center;
+    h1 {
+      font-family: $heading-font;
+      font-weight: 700;
+      color: $dark-blue;
+    }
+    p {
+      font-family: $body-font;
+      font-weight: 400;
+    }
+  }
+  .images {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    div {
+      img {
+        object-fit: cover;
+        max-width: 60%;
+      }
+      border-bottom: 2px solid gray;
+      display: flex;
+      flex-direction: row;
+      h2 {
+        margin: auto;
+        font-family: $heading-font;
+        font-weight: 400;
+        color: $regular-blue;
+      }
+      a {
+        display: none;
+        color: $heading-dark;
+      }
+    }
+    :nth-child(4) {
+      border-bottom: none;
+    }
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      div {
+        border-bottom: none;
+        flex-direction: column;
+        a {
+          display: block;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

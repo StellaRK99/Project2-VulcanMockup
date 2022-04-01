@@ -20,7 +20,7 @@ function Footer() {
             <i className="icon-mail-alt" /> CONTACT US
           </p>
         </div>
-        <p>COPYRIGHT 2017. ALL RIGHTS RESERVED</p>
+        <p className="copyRight">COPYRIGHT 2017. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
   );

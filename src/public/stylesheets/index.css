@@ -373,6 +373,7 @@ footer .contactInfo {
 
 footer .contactInfo img {
   height: 2.5em;
+  margin: 10px;
 }
 
 footer .contactInfo .contactNumbers {
@@ -410,6 +411,33 @@ footer .contactInfo p {
   }
   footer .contactInfo {
     width: 55%;
+  }
+}
+
+@media (min-width: 1250px) {
+  footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .icon {
+    width: 20%;
+  }
+  footer .contactInfo {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .contactInfo .copyRight {
+    width: 60%;
   }
 }
 
@@ -542,6 +570,183 @@ footer .contactInfo p {
     color: white;
     border: none;
     background-color: #009ddc;
+  }
+}
+
+.customized {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customized .text {
+  text-align: center;
+}
+
+.customized .text h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #244a64;
+}
+
+.customized .text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.customized .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.customized .images div {
+  border-bottom: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.customized .images div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 60%;
+}
+
+.customized .images div h2 {
+  margin: auto;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  color: #009ddc;
+}
+
+.customized .images div a {
+  display: none;
+  color: #504f4f;
+}
+
+.customized .images :nth-child(4) {
+  border-bottom: none;
+}
+
+@media (min-width: 850px) {
+  .customized .images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .customized .images div {
+    border-bottom: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .customized .images div a {
+    display: block;
+  }
+  .customized .images div img {
+    max-width: 100%;
+  }
+}
+
+.productAdvisor {
+  background-color: #244a64;
+  padding: 15px;
+}
+
+.productAdvisor .heading {
+  text-align: center;
+}
+
+.productAdvisor .heading h1 {
+  margin: 0;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.productAdvisor .heading p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #009ddc;
+}
+
+.productAdvisor .form {
+  padding-top: 15px;
+}
+
+.productAdvisor .form div label {
+  vertical-align: top;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.productAdvisor .form div select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.productAdvisor .form button {
+  background-color: #009ddc;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 25px auto;
+}
+
+@media (min-width: 850px) {
+  .productAdvisor .form form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .productAdvisor .form form div {
+    width: 48%;
+  }
+  .productAdvisor .form form div select {
+    width: 100%;
+  }
+  .productAdvisor .form form div label {
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 1250px) {
+  .productAdvisor .form form div {
+    width: 19%;
   }
 }
 /*# sourceMappingURL=index.css.map */
