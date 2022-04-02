@@ -10,7 +10,7 @@
         padding: 0%;
         list-style: none;
         background-color: rgba(128, 128, 128, 0.479);
-        width: 50%;
+        width: 95%;
         height: 70px;
         display: flex;
         justify-content: space-evenly;
@@ -21,5 +21,10 @@
                 color: white;
             }
         }
+    }
+}
+@media screen and (max-width: 767px) {
+    .MainNavBar{
+        display: none;
     }
 }

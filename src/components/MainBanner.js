@@ -23,14 +23,20 @@ function MainBanner() {
           <li>
             <h4>CONTACT US</h4>
           </li>
+          <div className='BurgerBtnContainer'>
+            <div className='BurgerBtn'></div>
+            <div className='BurgerBtn'></div>
+            <div className='BurgerBtn'></div>
+          </div>
         </ul>
         <Navbar />
-        <BannerCarousel />
-        <h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
+        <h1>WE DESIGN AND FABRICATE INDESTRUCTIBLE WASTEWATER SCREENS. ENOUGH SAID.</h1>
         <div className='ButtonContainer'>
           <button className='Prosucts btn'>VIEW PRODUCTS</button>
           <button className='Services btn'>VIEW SERVICES</button>
         </div>
+        <BannerCarousel />
+        
     </div>
   )
 }
