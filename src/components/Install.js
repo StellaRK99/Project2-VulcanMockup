@@ -4,7 +4,7 @@ import lightBlueWave from "../public/images/wave-blue-light.png";
 
 export default function ContactBanner() {
   return (
-    <div className="contactBanner">
+    <section className="contactBanner">
       <div className="mapImage">
         <img src={map} alt="map" />
         <div className="text">
@@ -21,7 +21,7 @@ export default function ContactBanner() {
           <button>CONTACT US</button>
         </div>
       </div>
-      <img src={lightBlueWave} alt="blue wave" />
-    </div>
+      <img src={lightBlueWave} alt="light blue wave" />
+    </section>
   );
 }
