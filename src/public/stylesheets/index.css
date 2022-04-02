@@ -279,22 +279,37 @@
 }
 
 .NewsletterForm form {
+  padding-left: 2%;
   margin: auto;
   padding-top: 20px;
-  font-size: 20px;
-  width: 70%;
+  padding-bottom: 5px;
   color: #0b3552;
-  height: 5vh;
+  height: 8vh;
+  font-size: 14px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.NewsletterForm form label {
+  margin: auto;
 }
 
 .NewsletterForm form input {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin-left: 15px;
-  width: 40%;
   border: none;
-  height: 22px;
+  height: 26px;
+  width: 50%;
+  margin-top: 10px;
 }
 
 .NewsletterForm form button {
+  height: 24px;
   width: 100px;
   margin-left: 10px;
   padding: 5px 5px 5px 5px;
@@ -303,7 +318,22 @@
   background-color: #45b0f8;
 }
 
-@media (max-width: 1250px) {
+@media (min-width: 450px) {
+  .NewsletterForm {
+    text-align: center;
+  }
+  .NewsletterForm form {
+    display: block;
+    height: 6vh;
+    font-size: 20px;
+  }
+  .NewsletterForm form input {
+    margin-top: 10px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 850px) {
   .NewsletterForm form {
     width: 90%;
   }
@@ -312,28 +342,12 @@
   }
 }
 
-@media (max-width: 850px) {
-  .NewsletterForm {
-    text-align: center;
-  }
+@media (min-width: 1250px) {
   .NewsletterForm form {
-    height: 8vh;
+    width: 90%;
   }
   .NewsletterForm form input {
-    margin-top: 10px;
-    width: 50%;
-  }
-}
-
-@media (max-width: 450px) {
-  .NewsletterForm form {
-    height: 8vh;
-    font-size: 16px;
-    width: 100%;
-  }
-  .NewsletterForm form input {
-    width: 40%;
-    margin-top: 10px;
+    width: 30%;
   }
 }
 
