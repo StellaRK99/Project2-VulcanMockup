@@ -42,9 +42,30 @@
   margin: 6px 0;
 }
 
-.MainBanner .TopNavbar h1 {
-  position: relative;
-  z-index: 10;
+.MainBanner .MobileNav {
+  padding: 0;
+  margin: 0%;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  z-index: 20;
+  color: white;
+  list-style: none;
+  background-color: rgba(65, 65, 65, 0.747);
+}
+
+.MainBanner .MobileNav li {
+  padding: 1% 0% 1% 5%;
+}
+
+.MainBanner .MobileNav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.MainBanner .MobileNav li:hover {
+  background-color: #0092e7;
 }
 
 .MainBanner h1 {
@@ -52,9 +73,9 @@
   z-index: 10;
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0px 10px 0px 10px;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 .MainBanner .ButtonContainer {
@@ -69,12 +90,23 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  margin-top: 35%;
+  margin-top: 10%;
 }
 
-.MainBanner .ButtonContainer button {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+.MainBanner .ButtonContainer .Holder {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MainBanner .ButtonContainer .Holder button {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   display: block;
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -85,7 +117,28 @@
 
 @media screen and (min-width: 600px) {
   .MainBanner h1 {
-    font-size: 33px;
+    margin-top: 15%;
+    font-size: 40px;
+  }
+  .MainBanner .ButtonContainer {
+    margin-top: 15%;
+  }
+  .MainBanner .ButtonContainer .Holder {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .MainBanner .ButtonContainer .Holder button {
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 
@@ -121,17 +174,30 @@
     display: none;
   }
   .MainBanner h1 {
-    margin: 0;
-    margin-top: 15%;
-    font-size: 50px;
+    margin: 15% 10px 0px 10px;
+    font-size: 35px;
   }
   .MainBanner .ButtonContainer {
     margin-top: 10%;
   }
-  .MainBanner .ButtonContainer button {
+  .MainBanner .ButtonContainer .Holder {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .MainBanner .ButtonContainer .Holder button {
     margin: 40px 10px 0px 10px;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .MainBanner .ButtonContainer .HL {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .MainBanner .ButtonContainer .HR {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -142,7 +208,7 @@
     margin: 5% auto;
   }
   .MainBanner .ButtonContainer {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .MainBanner .ButtonContainer button {
     margin: 40px 10px 0px 10px;
@@ -154,9 +220,10 @@
 @media screen and (min-width: 1214px) {
   .MainBanner h1 {
     font-size: 60px;
+    margin-bottom: 0%;
   }
   .MainBanner .ButtonContainer {
-    margin-top: 7%;
+    margin-top: 1%;
   }
   .MainBanner .ButtonContainer button {
     margin: 40px 30px 0px 30px;
@@ -169,16 +236,18 @@
     margin-bottom: 0%;
   }
   .MainBanner .ButtonContainer {
-    margin-top: 2%;
+    margin-top: 1%;
   }
-  .MainBanner .ButtonContainer button {
+  .MainBanner .ButtonContainer .Holder button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     margin: 40px 30px 0px 30px;
   }
 }
 
 @media screen and (min-width: 1424px) {
   .MainBanner h1 {
-    margin-top: 1%;
+    margin-top: 2%;
     font-size: 70px;
     margin-bottom: 0%;
     width: 90%;
@@ -186,7 +255,9 @@
   .MainBanner .ButtonContainer {
     margin-top: 1%;
   }
-  .MainBanner .ButtonContainer button {
+  .MainBanner .ButtonContainer .Holder button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     margin: 40px 30px 0px 30px;
   }
 }
