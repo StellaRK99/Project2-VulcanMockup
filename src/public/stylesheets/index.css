@@ -73,8 +73,8 @@
 }
 
 .MainBanner .ButtonContainer button {
-  -ms-flex-preferred-size: 41%;
-      flex-basis: 41%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
   display: block;
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -83,45 +83,160 @@
   padding: 10px;
 }
 
-.MainNavBar {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  z-index: 10;
+@media screen and (min-width: 600px) {
+  .MainBanner h1 {
+    font-size: 33px;
+  }
 }
 
-.MainNavBar ul {
-  margin: 0%;
-  margin-top: 30px;
-  padding: 0%;
-  list-style: none;
-  background-color: rgba(128, 128, 128, 0.479);
-  width: 95%;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.MainNavBar ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-@media screen and (max-width: 767px) {
-  .MainNavBar {
+@media screen and (min-width: 767px) {
+  .MainBanner .TopNavbar {
+    padding: 0;
+    position: relative;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 10;
+    width: 100%;
+    height: 130px;
+    margin: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .MainBanner .TopNavbar li {
+    display: inline;
+    color: white;
+  }
+  .MainBanner .TopNavbar li h4 {
+    font-weight: 500;
+  }
+  .MainBanner .TopNavbar .Icon {
+    padding-top: 40px;
+    position: relative;
+    width: 25%;
+  }
+  .MainBanner .TopNavbar .BurgerBtnContainer {
     display: none;
+  }
+  .MainBanner h1 {
+    margin: 0;
+    margin-top: 15%;
+    font-size: 50px;
+  }
+  .MainBanner .ButtonContainer {
+    margin-top: 10%;
+  }
+  .MainBanner .ButtonContainer button {
+    margin: 40px 10px 0px 10px;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .MainBanner h1 {
+    font-size: 55px;
+    width: 90%;
+    margin: 5% auto;
+  }
+  .MainBanner .ButtonContainer {
+    margin-top: 10%;
+  }
+  .MainBanner .ButtonContainer button {
+    margin: 40px 10px 0px 10px;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media screen and (min-width: 1214px) {
+  .MainBanner h1 {
+    font-size: 60px;
+  }
+  .MainBanner .ButtonContainer {
+    margin-top: 7%;
+  }
+  .MainBanner .ButtonContainer button {
+    margin: 40px 30px 0px 30px;
+  }
+}
+
+@media screen and (min-width: 1324px) {
+  .MainBanner h1 {
+    font-size: 65px;
+    margin-bottom: 0%;
+  }
+  .MainBanner .ButtonContainer {
+    margin-top: 2%;
+  }
+  .MainBanner .ButtonContainer button {
+    margin: 40px 30px 0px 30px;
+  }
+}
+
+@media screen and (min-width: 1424px) {
+  .MainBanner h1 {
+    margin-top: 1%;
+    font-size: 70px;
+    margin-bottom: 0%;
+    width: 90%;
+  }
+  .MainBanner .ButtonContainer {
+    margin-top: 1%;
+  }
+  .MainBanner .ButtonContainer button {
+    margin: 40px 30px 0px 30px;
+  }
+}
+
+.MainNavBar {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .MainNavBar {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    z-index: 10;
+  }
+  .MainNavBar ul {
+    margin: 0%;
+    margin-top: 30px;
+    padding: 0%;
+    list-style: none;
+    background-color: rgba(46, 46, 46, 0.63);
+    width: 95%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .MainNavBar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .MainNavBar {
+    margin-top: 2%;
+  }
+  .MainNavBar ul {
+    width: 60%;
   }
 }
 
@@ -138,6 +253,10 @@
 
 .carousel-root .carousel button {
   display: none;
+}
+
+.carousel-root .carousel .control-dots {
+  margin-bottom: 80px;
 }
 
 .carousel-root .carousel .control-dots li {
