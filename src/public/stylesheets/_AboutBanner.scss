@@ -14,97 +14,61 @@
 
     }
     h1{
-        font-size:45px;
-        width:50%;
         text-align:center;
         color:white;
         position: absolute;
-        top: 20%;
-        left: 50%;
         transform: translate(-50%, -50%);
+        top:30%;
+        left: 50%;
+        width:80%;
+        font-size: 30px;
     }
     p{
-        font-size:13px;
+        font-size:14px;
         text-align:center;
-        width:40%;
         color:white;
         position: absolute;
-        top: 45%;
-        left: 30%;
+        width:65%;
+        top:50%;
+        left:18%;
     }
     button{
         position:absolute;
-        top:75%; 
-        left:50%;
         transform: translate(-50%, -50%);
-        
-        
         background-color: transparent;
         color:white;
         border:1px solid white;
         width:150px;
         height:30px;
+        top:85%;
+        left:50%;
     }
 
 }
+@media(min-width:640px){
+    .aboutBanner{
+        
+        h1{
+            top:30%;
+            width:80%;
+            font-size: 40px;
+        }
+        p{
+            width:65%;
+            top:60%;
+            left:18%;
+            font-size:15px;
+        }
+        button{
+            top:85%;
+        }
+    }
+}
 
-@media(max-width:900px){
+@media(min-width:900px){
     .aboutBanner{
         h1{
             width:70%;
-        }
-    }
-}
-
-@media(max-width:640px){
-    .aboutBanner{
-        h1{
-            top:30%;
-            width:80%;
-            font-size: 40px;
-        }
-        p{
-            width:65%;
-            top:60%;
-        }
-        button{
-            top:85%;
-        }
-    }
-}
-
-@media(max-width:640px){
-    .aboutBanner{
-        h1{
-            top:30%;
-            width:80%;
-            font-size: 40px;
-        }
-        p{
-            width:65%;
-            top:60%;
-            left:18%;
-        }
-        button{
-            top:85%;
-        }
-    }
-}
-
-@media(max-width:400px){
-    .aboutBanner{
-        h1{
-            top:30%;
-            width:80%;
-            font-size: 30px;
-        }
-        p{
-            width:65%;
-            top:50%;
-            left:18%;
-        }
-        button{
-            top:85%;
         }
     }
 }
