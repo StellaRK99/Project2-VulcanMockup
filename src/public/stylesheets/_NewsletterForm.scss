@@ -1,7 +1,11 @@
+@import './Variables';
+
 .NewsletterForm{
     width:100%;
-    background-color: rgb(187, 211, 233);
+    background-color: $light-blue;
+    padding-bottom:8px;
     form{
+    font-family: $body-font;
     padding-left:2%;
     margin:auto;
     padding-top:20px;
@@ -24,20 +28,24 @@
         margin-top:10px;
     }
     button{
-        height:24px;
+        font-family: $body-font;
+        font-weight:bold;
+        height:26px;
         width:100px;
         margin-left:10px;
         padding:5px 5px 5px 5px;
         border:none;
         color:white;
         background-color: rgb(69, 176, 248);
+        margin-top:14px;
     }
 }
 }
 
 
-@media(min-width:450px){
+@media(min-width:$phone){
     .NewsletterForm{
+        height:12vh;
         text-align: center;
         form{
             display: block;
@@ -50,8 +58,10 @@
         }
     }
 }
-@media(min-width:850px){
+@media(min-width:$tablet){
     .NewsletterForm{
+        
+        height:9vh;
         form{
             width:90%;
             input{
@@ -60,7 +70,7 @@
         }
     }
 }
-@media(min-width:1250px){
+@media(min-width:$desktop){
     .NewsletterForm{
         form{
             width:90%;
