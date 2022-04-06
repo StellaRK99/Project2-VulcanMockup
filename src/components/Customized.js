@@ -64,7 +64,7 @@ export default function Customized() {
             srcSet={`${image4s} 300w, ${image4m} 768w, ${image4l} 912w`}
           />
           <h2>
-            SLUDGE <br /> THICHENING
+            SLUDGE <br /> THICKENING
           </h2>
 
           <a href="#">View Selection</a>

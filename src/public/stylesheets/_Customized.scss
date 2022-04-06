@@ -57,4 +57,10 @@
       }
     }
   }
+  img {
+    width: 150%;
+    @media (min-width: $tablet) {
+      width: 100%;
+    }
+  }
 }

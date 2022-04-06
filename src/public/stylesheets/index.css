@@ -556,6 +556,16 @@ footer .icon {
   margin-bottom: 10px;
 }
 
+footer .icon svg {
+  height: 70%;
+}
+
+@media (min-width: 850px) {
+  footer .icon svg {
+    height: 100%;
+  }
+}
+
 footer .contactInfo {
   height: 50%;
   width: 80%;
@@ -617,6 +627,9 @@ footer .contactInfo p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  footer p {
+    font-size: 12px;
   }
   footer .icon {
     width: 20%;
@@ -746,7 +759,13 @@ footer .contactInfo p {
 .contactBanner img {
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: 150%;
+}
+
+@media (min-width: 850px) {
+  .contactBanner img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 850px) {
@@ -863,6 +882,16 @@ footer .contactInfo p {
   }
 }
 
+.customized img {
+  width: 150%;
+}
+
+@media (min-width: 850px) {
+  .customized img {
+    width: 100%;
+  }
+}
+
 .productAdvisor {
   background-color: #244a64;
   padding: 15px;
@@ -882,7 +911,13 @@ footer .contactInfo p {
 .productAdvisor .heading p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #009ddc;
+  color: white;
+}
+
+@media (min-width: 850px) {
+  .productAdvisor .heading p {
+    color: #009ddc;
+  }
 }
 
 .productAdvisor .form {
