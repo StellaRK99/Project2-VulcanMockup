@@ -14,7 +14,10 @@
     p {
       font-family: $body-font;
       font-weight: 400;
-      color: $regular-blue;
+      color: white;
+      @media (min-width: $tablet) {
+        color: $regular-blue;
+      }
     }
   }
   .form {

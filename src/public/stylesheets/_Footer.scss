@@ -11,6 +11,12 @@ footer {
   .icon {
     height: 50%;
     margin-bottom: 10px;
+    svg {
+      height: 70%;
+      @media (min-width: $tablet) {
+        height: 100%;
+      }
+    }
   }
   .contactInfo {
     height: 50%;
@@ -47,6 +53,9 @@ footer {
   }
   @media (min-width: $desktop) {
     justify-content: space-between;
+    p {
+      font-size: 12px;
+    }
     .icon {
       width: 20%;
     }

@@ -1,11 +1,25 @@
+@import './_Variables';
+
 .videoBanner{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:50vh;
+    height:40vh;
     background-color: rgb(69, 176, 248);
-    .promo-video{
-        margin-left:40px;
-        margin-right:40px;
+    background-color: $regular-blue;
+      .promo-video{
+       //border:10px solid rgba(24, 24, 116, 0.717);
+          margin-left:40px;
+        margin-right:40px;           
+        }
+     
+      
+   
+    
+        
+}
+@media(min-width:500px){
+    .videoBanner{
+        height:55vh;    
     }
 }

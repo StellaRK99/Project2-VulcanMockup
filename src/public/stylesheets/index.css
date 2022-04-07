@@ -393,90 +393,71 @@
 }
 
 .aboutBanner h1 {
-  font-size: 45px;
-  width: 50%;
+  font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   color: white;
   position: absolute;
-  top: 20%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  font-size: 30px;
 }
 
 .aboutBanner p {
-  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   text-align: center;
-  width: 40%;
   color: white;
   position: absolute;
-  top: 45%;
-  left: 30%;
+  width: 65%;
+  top: 55%;
+  left: 18%;
 }
 
 .aboutBanner button {
   position: absolute;
-  top: 75%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: transparent;
   color: white;
+  font-family: "Roboto", sans-serif;
   border: 1px solid white;
   width: 150px;
-  height: 30px;
+  height: 35px;
+  top: 85%;
+  left: 50%;
+  font-weight: bold;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 640px) {
   .aboutBanner h1 {
+    top: 30%;
+    width: 80%;
+    font-size: 40px;
+  }
+  .aboutBanner p {
+    width: 65%;
+    top: 60%;
+    left: 18%;
+    font-size: 15px;
+  }
+  .aboutBanner button {
+    top: 85%;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutBanner h1 {
+    top: 35%;
     width: 70%;
   }
-}
-
-@media (max-width: 640px) {
-  .aboutBanner h1 {
-    top: 30%;
-    width: 80%;
-    font-size: 40px;
-  }
   .aboutBanner p {
-    width: 65%;
-    top: 60%;
+    font-size: 20px;
   }
   .aboutBanner button {
-    top: 85%;
-  }
-}
-
-@media (max-width: 640px) {
-  .aboutBanner h1 {
-    top: 30%;
-    width: 80%;
-    font-size: 40px;
-  }
-  .aboutBanner p {
-    width: 65%;
-    top: 60%;
-    left: 18%;
-  }
-  .aboutBanner button {
-    top: 85%;
-  }
-}
-
-@media (max-width: 400px) {
-  .aboutBanner h1 {
-    top: 30%;
-    width: 80%;
-    font-size: 30px;
-  }
-  .aboutBanner p {
-    width: 65%;
-    top: 50%;
-    left: 18%;
-  }
-  .aboutBanner button {
-    top: 85%;
+    font-size: 18px;
   }
 }
 
@@ -490,8 +471,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50vh;
+  height: 40vh;
   background-color: #45b0f8;
+  background-color: #009ddc;
 }
 
 .videoBanner .promo-video {
@@ -499,12 +481,20 @@
   margin-right: 40px;
 }
 
+@media (min-width: 500px) {
+  .videoBanner {
+    height: 55vh;
+  }
+}
+
 .NewsletterForm {
   width: 100%;
-  background-color: #bbd3e9;
+  background-color: #bedcef;
+  padding-bottom: 8px;
 }
 
 .NewsletterForm form {
+  font-family: "Roboto", sans-serif;
   padding-left: 2%;
   margin: auto;
   padding-top: 20px;
@@ -535,17 +525,21 @@
 }
 
 .NewsletterForm form button {
-  height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  height: 26px;
   width: 100px;
   margin-left: 10px;
   padding: 5px 5px 5px 5px;
   border: none;
   color: white;
   background-color: #45b0f8;
+  margin-top: 14px;
 }
 
 @media (min-width: 450px) {
   .NewsletterForm {
+    height: 12vh;
     text-align: center;
   }
   .NewsletterForm form {
@@ -560,6 +554,9 @@
 }
 
 @media (min-width: 850px) {
+  .NewsletterForm {
+    height: 9vh;
+  }
   .NewsletterForm form {
     width: 90%;
   }
@@ -596,6 +593,16 @@ footer {
 footer .icon {
   height: 50%;
   margin-bottom: 10px;
+}
+
+footer .icon svg {
+  height: 70%;
+}
+
+@media (min-width: 850px) {
+  footer .icon svg {
+    height: 100%;
+  }
 }
 
 footer .contactInfo {
@@ -659,6 +666,9 @@ footer .contactInfo p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  footer p {
+    font-size: 12px;
   }
   footer .icon {
     width: 20%;
@@ -788,7 +798,13 @@ footer .contactInfo p {
 .contactBanner img {
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: 150%;
+}
+
+@media (min-width: 850px) {
+  .contactBanner img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 850px) {
@@ -905,6 +921,16 @@ footer .contactInfo p {
   }
 }
 
+.customized img {
+  width: 150%;
+}
+
+@media (min-width: 850px) {
+  .customized img {
+    width: 100%;
+  }
+}
+
 .productAdvisor {
   background-color: #244a64;
   padding: 15px;
@@ -924,7 +950,13 @@ footer .contactInfo p {
 .productAdvisor .heading p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #009ddc;
+  color: white;
+}
+
+@media (min-width: 850px) {
+  .productAdvisor .heading p {
+    color: #009ddc;
+  }
 }
 
 .productAdvisor .form {
