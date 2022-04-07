@@ -2,6 +2,7 @@ import React, { useState, useEffect  } from 'react'
 import BannerCarousel from './Carousel'
 import Icon from './Icon'
 import Navbar from './Navbar'
+import Wave from '../public/images/wave-white.png'
 
 
 function getWindowDimensions() {
@@ -29,11 +30,11 @@ function getWindowDimensions() {
 
 function MainBanner() {
   const [toggle, setToggle] = useState(false)
+  
   const { height, width } = useWindowDimensions();
   console.log(width)
   useEffect(()=>{
     if(width >= 767){
-      console.log('wewewewewewe')
       setToggle(false)
     }
   }, [width])
@@ -86,6 +87,9 @@ function MainBanner() {
           </div>
         </div>
         <BannerCarousel />
+        <figure className='Wave'>
+          <img src={Wave} />
+        </figure>
         
     </div>
   )
